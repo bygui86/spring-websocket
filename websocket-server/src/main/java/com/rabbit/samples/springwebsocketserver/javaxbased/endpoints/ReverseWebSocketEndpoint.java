@@ -1,6 +1,7 @@
-package com.rabbit.samples.springwebsocketserver.endpoints;
+package com.rabbit.samples.springwebsocketserver.javaxbased.endpoints;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import javax.websocket.CloseReason;
 import javax.websocket.OnClose;
@@ -14,6 +15,7 @@ import java.net.URI;
 
 
 @Slf4j
+@Component
 @ServerEndpoint("/reverse")
 public class ReverseWebSocketEndpoint {
 

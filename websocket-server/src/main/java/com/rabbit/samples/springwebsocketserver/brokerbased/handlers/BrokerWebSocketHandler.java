@@ -15,7 +15,7 @@ import java.util.Date;
  */
 @Slf4j
 // @Component
-public class WebSocketMessageBrokerHandler {
+public class BrokerWebSocketHandler {
 
 	// @MessageMapping("/chat") // The root is configured by the Application Destination Proxy
 	// @SendTo("/topic/messages")

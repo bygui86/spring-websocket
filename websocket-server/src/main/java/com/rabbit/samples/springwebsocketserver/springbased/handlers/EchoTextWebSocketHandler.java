@@ -1,4 +1,4 @@
-package com.rabbit.samples.springwebsocketserver.handlers;
+package com.rabbit.samples.springwebsocketserver.springbased.handlers;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.socket.CloseStatus;

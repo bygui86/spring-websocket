@@ -23,7 +23,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 @Configuration
 // @EnableWebSocketMessageBroker
 // public class WebSocketMessageBrokerConfig implements WebSocketMessageBrokerConfigurer {
-public class WebSocketMessageBrokerConfig {
+public class WebSocketBrokerConfig {
 
 	String websocketEndpoint = "/ws";
 

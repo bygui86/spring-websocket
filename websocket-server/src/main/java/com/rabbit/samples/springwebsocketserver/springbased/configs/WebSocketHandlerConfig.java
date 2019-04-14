@@ -1,8 +1,8 @@
-package com.rabbit.samples.springwebsocketserver.configs;
+package com.rabbit.samples.springwebsocketserver.springbased.configs;
 
-import com.rabbit.samples.springwebsocketserver.handlers.EchoBroadcastWebSocketHandler;
-import com.rabbit.samples.springwebsocketserver.handlers.EchoTextBinaryWebSocketHandler;
-import com.rabbit.samples.springwebsocketserver.handlers.EchoTextWebSocketHandler;
+import com.rabbit.samples.springwebsocketserver.springbased.handlers.EchoBroadcastWebSocketHandler;
+import com.rabbit.samples.springwebsocketserver.springbased.handlers.EchoTextBinaryWebSocketHandler;
+import com.rabbit.samples.springwebsocketserver.springbased.handlers.EchoTextWebSocketHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

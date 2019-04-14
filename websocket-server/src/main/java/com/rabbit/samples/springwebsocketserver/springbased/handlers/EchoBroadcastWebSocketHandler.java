@@ -1,7 +1,8 @@
-package com.rabbit.samples.springwebsocketserver.handlers;
+package com.rabbit.samples.springwebsocketserver.springbased.handlers;
 
 import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -19,6 +20,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * 12 Apr 2019
  */
 @Slf4j
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter(AccessLevel.PROTECTED)
 public class EchoBroadcastWebSocketHandler extends AbstractWebSocketHandler {
 

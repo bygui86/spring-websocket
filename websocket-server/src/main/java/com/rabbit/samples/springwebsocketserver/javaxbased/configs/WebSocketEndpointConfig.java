@@ -1,6 +1,5 @@
-package com.rabbit.samples.springwebsocketserver.configs;
+package com.rabbit.samples.springwebsocketserver.javaxbased.configs;
 
-import com.rabbit.samples.springwebsocketserver.endpoints.ReverseWebSocketEndpoint;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,14 +21,6 @@ public class WebSocketEndpointConfig {
 		log.debug("Configure ServerEndpointExporter");
 
 		return new ServerEndpointExporter();
-	}
-
-	@Bean
-	public ReverseWebSocketEndpoint reverseWebSocketHandler() {
-
-		log.debug("Create ReverseWebSocketHandler");
-
-		return new ReverseWebSocketEndpoint();
 	}
 
 }

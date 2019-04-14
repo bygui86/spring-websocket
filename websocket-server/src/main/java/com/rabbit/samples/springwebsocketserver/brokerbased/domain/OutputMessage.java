@@ -1,4 +1,4 @@
-package com.rabbit.samples.springwebsocketserver.domain;
+package com.rabbit.samples.springwebsocketserver.brokerbased.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
