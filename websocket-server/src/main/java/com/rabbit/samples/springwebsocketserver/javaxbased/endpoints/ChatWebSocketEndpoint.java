@@ -82,10 +82,9 @@ public class ChatWebSocketEndpoint {
 		chatEndpoints.forEach(endpoint -> {
 			synchronized (endpoint) {
 				try {
-					endpoint.session.getBasicRemote().
-							sendObject(message);
-				} catch (IOException | EncodeException e) {
-					e.printStackTrace();
+					endpoint.session.getBasicRemote().sendObject(message);
+				} catch (IOException | EncodeException ex) {
+					log.error("Exception broadcasting message: {}", ex.getMessage());
 				}
 			}
 		});

@@ -1,4 +1,4 @@
-package com.rabbit.samples.springwebsocketserver.brokerbased.domain;
+package com.rabbit.samples.springwebsocketserver.stompbased.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -26,10 +26,12 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @EqualsAndHashCode
 @ToString
-public class InputMessage {
+public class OutputMessage {
 
 	String from;
 
 	String content;
+
+	String time;
 
 }

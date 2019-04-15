@@ -15,8 +15,8 @@ import java.net.URI;
 
 
 @Slf4j
-@Component
 @ServerEndpoint("/reverse")
+@Component
 public class ReverseWebSocketEndpoint {
 
 	@OnOpen

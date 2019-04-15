@@ -23,6 +23,10 @@ import org.springframework.web.socket.server.standard.ServletServerContainerFact
 @EnableWebSocket
 public class WebSocketHandlerConfig implements WebSocketConfigurer {
 
+	/**
+	 * The advantage of using sockJS here is whenever the websocket connection is disconnected or the websocket connection can not be established,
+	 * then the connection will be downgraded to HTTP and the communication between client and server can still continue.
+	 */
 	@Override
 	public void registerWebSocketHandlers(final WebSocketHandlerRegistry registry) {
 
@@ -37,10 +41,12 @@ public class WebSocketHandlerConfig implements WebSocketConfigurer {
 		registry
 				.addHandler(echoTextBinaryWebSocketHandler(), "/multi")
 				.setAllowedOrigins("*")
+				.withSockJS()
 		;
 		registry
 				.addHandler(echoBroadcastWebSocketHandler(), "/broadcast")
 				.setAllowedOrigins("*")
+				.withSockJS()
 		;
 	}
 
